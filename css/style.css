@@ -1,0 +1,309 @@
+:root {
+  /* color */
+  --strong-cyan: hsl(171, 66%, 44%);
+  --light-blue: hsl(233, 100%, 69%);
+  --dark-grayish-blue: hsl(201, 10%, 33%);
+  --grayish-blue: hsl(201, 11%, 66%);
+
+  --dark-light-blue: hsl(233, 39%, 45%);
+  --dark-strong-cyan: hsl(171, 89%, 30%);
+
+  /* font */
+  --font-bai-jamjuree: "Bai Jamjuree", sans-serif;
+
+  --fn-weight-normal: 400;
+  --fn-weight-bold: 600;
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  width: 100vw;
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  box-sizing: border-box;
+  background-image: url(../images/bg-header-desktop.png);
+  background-position: top;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  font-size: 18px;
+  font-family: var(--font-bai-jamjuree);
+  overflow-x: hidden;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* editing starts from here */
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* header */
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  margin-top: 6.5rem;
+}
+
+.logo-header {
+  width: 7.1rem;
+  margin-top: 1rem;
+  margin-bottom: 2.8rem;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.6rem;
+  color: var(--dark-grayish-blue);
+  text-align: center;
+}
+
+.header p {
+  font-size: 1.15rem;
+  text-align: center;
+  width: 65%;
+  margin-bottom: 2.2rem;
+  color: var(--grayish-blue);
+}
+
+.header-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-flow: wrap;
+  text-align: center;
+}
+
+.btn {
+  font-size: 0.95rem;
+  font-weight: var(--fn-weight-bold);
+  margin: 0.5rem;
+  border: none;
+  padding: 0.8rem 2rem;
+  border-radius: 2rem;
+  color: white;
+  letter-spacing: 1px;
+}
+
+.download-ios {
+  background-color: var(--strong-cyan);
+  border-bottom: 0.186rem solid var(--dark-strong-cyan);
+}
+
+.download-mac {
+  background-color: var(--light-blue);
+  border-bottom: 0.186rem solid var(--dark-light-blue);
+}
+
+/* section-1 */
+.section-1 {
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  margin: 6.5rem 0;
+}
+
+.section-1 h2 {
+  color: var(--dark-grayish-blue);
+  font-size: 2rem;
+  margin: 1rem 0;
+}
+
+.section-1 p {
+  width: 46%;
+  font-size: 1rem;
+  color: var(--grayish-blue);
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+/* sub-section */
+.sub-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: wrap;
+}
+
+/* .left-side {
+
+} */
+
+.left-side img {
+  margin-left: -3rem;
+}
+
+.right-side {
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  margin-top: -2rem;
+}
+
+.sub-box {
+  display: inline-block;
+  padding: 1.5rem 3rem;
+}
+
+.right-side h3 {
+  color: var(--dark-grayish-blue);
+}
+
+.right-side p {
+  width: 55%;
+  font-size: 0.9rem;
+  text-align: start;
+  line-height: 25px;
+  margin: 0.5rem 0;
+  margin-bottom: 0;
+}
+
+/* section-2 */
+
+.section-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  text-align: center;
+  margin: 6rem;
+}
+
+.section-2 p {
+  width: 70%;
+}
+
+/* section-3 */
+.section-3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+
+.sec-3-para {
+  width: 60%;
+}
+
+.col-3-box {
+  min-width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  color: var(--dark-grayish-blue);
+}
+
+.col-box {
+  min-width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  flex-wrap: wrap;
+  margin: 0 -2rem;
+}
+
+.col-box p {
+  width: 80%;
+  padding: 1rem 0.5rem;
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.col-box img {
+  margin-bottom: 2rem;
+  font-weight: bolder;
+}
+
+.col-4-box {
+  width: 90%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 8rem 1rem;
+  flex-wrap: wrap;
+}
+
+.col-4-box img {
+  margin: 0 1rem;
+}
