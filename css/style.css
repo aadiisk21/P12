@@ -185,7 +185,7 @@ select {
   margin: 1rem 0;
 }
 
-.section-1 p {
+.section-1 > p {
   width: 46%;
   font-size: 1rem;
   color: var(--grayish-blue);
@@ -233,6 +233,7 @@ select {
   line-height: 25px;
   margin: 0.5rem 0;
   margin-bottom: 0;
+  color: var(--grayish-blue);
 }
 
 /* section-2 */
@@ -243,26 +244,40 @@ select {
   align-items: center;
   flex-flow: column;
   text-align: center;
-  margin: 6rem;
+  margin-top: 6rem;
 }
 
 .section-2 p {
   width: 70%;
+  font-size: 1rem;
+  color: var(--grayish-blue);
+  margin-bottom: 4rem;
 }
 
 /* section-3 */
 .section-3 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: column;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
 }
 
-.sec-3-para {
-  width: 60%;
+.section-3 h3 {
+  color: var(--dark-grayish-blue);
 }
 
-.col-3-box {
+.section-3 p {
+  text-align: center;
+  color: var(--grayish-blue);
+  font-size: 1rem;
+}
+
+.section-3 img {
+  margin: 0 auto;
+}
+
+
+
+/* .col-3-box {
   min-width: 80%;
   display: flex;
   justify-content: center;
@@ -306,4 +321,4 @@ select {
 
 .col-4-box img {
   margin: 0 1rem;
-}
+} */
