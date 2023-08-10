@@ -339,3 +339,31 @@ select {
   margin: 1.5rem 2.4rem;
   padding: 0.5rem;
 }
+
+/* Section - 4 */
+.section-4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.section-4 h2 {
+  font-size: 2rem;
+  color: var(--dark-grayish-blue);
+  margin-bottom: 1rem;
+}
+
+.section-4 p {
+  color: var(--grayish-blue);
+  font-size: 1rem;
+  width: 65%;
+  margin-bottom: 1.5rem;
+}
+
+/* footer - Button */
+.footer-btn {
+  margin: 1rem;
+}
