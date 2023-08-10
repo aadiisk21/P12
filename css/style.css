@@ -242,7 +242,13 @@ select {
   align-items: center;
   flex-flow: column;
   text-align: center;
-  margin-top: 6rem;
+  margin-top: 1.5rem;
+}
+
+.section-2 h2 {
+  font-size: 2rem;
+  color: var(--dark-grayish-blue);
+  margin-bottom: 1rem;
 }
 
 .section-2 p {
@@ -260,6 +266,13 @@ select {
   flex-flow: column;
   position: relative;
   text-align: center;
+  margin-top: 3rem;
+}
+
+.section-3 h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--dark-grayish-blue);
 }
 
 .section-3 h3 {
