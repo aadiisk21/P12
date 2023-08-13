@@ -348,6 +348,7 @@ select {
   flex-flow: column;
   flex-wrap: wrap;
   text-align: center;
+  margin-bottom: 7rem;
 }
 
 .section-4 h2 {
@@ -366,4 +367,11 @@ select {
 /* footer - Button */
 .footer-btn {
   margin: 1rem;
+}
+
+/* footer */
+.section-footer {
+  width: 100vw;
+  height: 18vh;
+  background: #f6f6f6;
 }
