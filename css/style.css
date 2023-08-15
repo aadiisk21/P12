@@ -8,6 +8,10 @@
   --dark-light-blue: hsl(233, 39%, 45%);
   --dark-strong-cyan: hsl(171, 89%, 30%);
 
+  /* hover button background */
+  --light-green-hover: hsl(171.5, 51.5%, 60%);
+  --light-blue-hover: hsl(235, 100%, 80%);
+
   /* font */
   --font-bai-jamjuree: "Bai Jamjuree", sans-serif;
 
@@ -168,6 +172,22 @@ select {
 .download-mac {
   background-color: var(--light-blue);
   border-bottom: 0.186rem solid var(--dark-light-blue);
+}
+/* hover */
+.download-ios:hover {
+  background-color: var(--light-green-hover);
+  border-bottom: 0.186rem solid hsla(160, 80%, 30%, 0.35);
+  box-shadow: 0px 2px 12px -2px hsl(171, 66%, 44%);
+  text-shadow: 1px 1px 1px var(--dark-strong-cyan);
+  transition: all 0.2s;
+}
+
+.download-mac:hover {
+  background-color: var(--light-blue-hover);
+  border-bottom: 0.186rem solid hsla(233, 39%, 45%, 0.35);
+  box-shadow: 0px 2px 12px -2px hsl(233, 100%, 69%);
+  text-shadow: 1px 1px 1px var(--light-blue);
+  transition: all 0.2s;
 }
 
 /* section-1 */
@@ -394,7 +414,7 @@ select {
 }
 
 .footer-div-sec-1 ul {
-  margin: 1rem;
+  margin: 0.3rem 1rem;
   font-size: 1rem;
   list-style: none;
   color: rgb(93, 93, 93);
@@ -413,6 +433,12 @@ select {
   color: rgb(93, 93, 93);
 }
 
+.footer-div-sec-1 li a:hover {
+  color: var(--dark-strong-cyan);
+  transition: all 0.3s;
+  text-shadow: 0px 0px 2px rgb(163, 163, 163);
+}
+
 .footer-social-icon {
   display: flex;
   justify-content: center;
@@ -422,4 +448,8 @@ select {
 .footer-social-icon img {
   width: 1.3rem;
   margin: 0.8rem;
+  fill: green;
+}
+
+.footer-social-icon img:hover {
 }
