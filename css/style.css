@@ -483,9 +483,9 @@ select {
   }
 
   /* section - 1 */
-  .section h2 {
+  .section-1 h2 {
     font-size: 1.8rem;
-    width: 70%;
+    width: 90%;
   }
 
   .section-1 p {
